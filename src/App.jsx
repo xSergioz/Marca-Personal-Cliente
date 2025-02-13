@@ -11,6 +11,33 @@ import './App.css'
 function App() {
   <>
   <Cabecera />
+  <Routes>
+    <Route path="/" element={
+      <div>
+        <Inicio />
+        <Pie />
+      </div>
+    }/>
+    <Route path="/alumno" element={
+      <div>
+        <Cabecera />
+        <Alumno />
+      </div>
+    }/>
+    <Route path="/empresa" element={
+      <div>
+        <Cabecera />
+        <Empresa />
+      </div>
+    }/>
+    <Route path="/centroeducativo" element={
+      <div>
+        <Cabecera />
+        <Alumno />
+      </div>
+    }/>
+
+  </Routes>
   </>
   
 }
